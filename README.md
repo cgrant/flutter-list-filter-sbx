@@ -7,7 +7,8 @@ To get a subset of items from a List in flutter you can use the `List.where()` m
 The following code creates a subset list called `openTodos` with items from `allTodos` that are not completed. 
 
 ```dart
-List<Todo> openTodos = allTodos.where((todo) => !todo.completed).toList();
+List<Todo> openTodos = allTodos.where((todo) => 
+    !todo.completed).toList();
 
 ```
 Don't forget to convert it to a List with `.toList()` at the end
